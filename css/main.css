@@ -1,0 +1,149 @@
+*,
+*:befor,
+*:after {
+  font-family: 'Staatliches', cursive, serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  font-family: 'Staatliches', cursive, serif;
+  padding: 0;
+  margin: 0;
+}
+input {
+  outline: none;
+}
+.wrapper {
+  min-width: 266px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  background-image: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
+  background-size: auto;
+  background-position: top center;
+  min-height: 668px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conteiner {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.starwarsImg {
+  width: 250px;
+  height: 120px;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+.p_text {
+  color: #fff;
+}
+.flexCentr {
+  display: flex;
+  align-items: center;
+}
+.search {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.search input {
+  width: 60px;
+  height: 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+  padding: 0 10px;
+  font-size: 15px;
+  font-family: 'Staatliches', cursive, serif;
+  letter-spacing: 1px;
+}
+.search input:focus {
+  box-shadow: #00ffff 0px 0px 12px 15px;
+  width: 100%;
+}
+.search img {
+  width: 140px;
+}
+.hearo_cart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cart {
+  border-bottom: 1px solid transparent;
+  border-radius: 40px;
+  width: 30%;
+  min-width: 195px;
+  height: 80%;
+  margin: 0px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.cart img {
+  cursor: pointer;
+  width: 230px;
+  height: 380px;
+}
+.cart p {
+  cursor: pointer;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.cart:hover {
+  box-shadow: #00ffff 0px 0px 25px 10px;
+}
+.footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_logo {
+  color: #fff;
+}
+@media (max-width: 746px) {
+  .cart p {
+    font-size: 15px;
+  }
+  .search {
+    margin-bottom: 40px;
+  }
+  .search img {
+    width: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .search {
+    margin-bottom: 40px;
+  }
+  .search input {
+    width: 47px;
+    height: 10px;
+    font-size: 10px;
+  }
+  .search img {
+    width: 70px;
+  }
+}
