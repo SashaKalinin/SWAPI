@@ -1,5 +1,3 @@
-
-
 // import {requestURL,heroCart,cardId,exampleModalLable,height,mass,hair,skin,birth,gender,wrapper,inputText} from './variables.js';
 
 var arr = [];
@@ -26,41 +24,43 @@ function generateData(data) {
     //SORT
     if (inputText.value) {
         let newArr = arr.filter((elem) => {
-           return elem.name.toLowerCase().includes(inputText.value.toLowerCase());
+            return elem.name.toLowerCase().includes(inputText.value.toLowerCase());
         })
         heroCart.innerHTML = '';
+        if(inputText.value == '') {
+            console.log(1)
+        }
         newArr.forEach((item) => {
             heroCart.innerHTML +=
                 `<p class="p_text" id="cardId" data-toggle="modal" data-target="#exampleModal">${item.name}</p>`
         })
-    } 
-    else {
+    } else {
         heroCart.innerHTML = '';
         arr.forEach((item) => {
             heroCart.innerHTML +=
-            `<p class="p_text" id="cardId" data-toggle="modal" data-target="#exampleModal">${item.name}</p>`
+                `<p class="p_text" id="cardId" data-toggle="modal" data-target="#exampleModal">${item.name}</p>`
         })
     }
 }
 
 //MAIN FUNCTION
-if(localStorage.key(0) === "StarWars") {
+if (localStorage.key(0) === "StarWars") {
     let localStorageData = JSON.parse(localStorage.getItem('StarWars'));
     generateData(localStorageData);
-}else {
+} else {
     sendRequest('GET', requestURL)
-    .then(data => generateData(data.results))
-    .catch(err => console.log(err))
+        .then(data => generateData(data.results))
+        .catch(err => console.log(err))
 }
 
 
 
 //INPUT SOUND
-inputText.addEventListener('focus', function() {
-     swordUp.play();
-     swoedSound.play()
+inputText.addEventListener('focus', function () {
+    swordUp.play();
+    swoedSound.play()
 })
-inputText.addEventListener('blur', function() {
+inputText.addEventListener('blur', function () {
     swoedDown.play();
     swoedSound.pause();
 })
@@ -68,15 +68,15 @@ inputText.addEventListener('blur', function() {
 
 
 //INPUT SERCH
-inputText.addEventListener('keydown', function () {
+inputText.addEventListener('input', function () {
     swoedSound2.play();
-    if(localStorage.key(0) === "StarWars") {
+    if (localStorage.key(0) === "StarWars") {
         let localStorageData = JSON.parse(localStorage.getItem('StarWars'));
         generateData(localStorageData);
-    }else {
+    } else {
         sendRequest('GET', requestURL)
-        .then(data => generateData(data.results))
-        .catch(err => console.log(err))
+            .then(data => generateData(data.results))
+            .catch(err => console.log(err))
     }
 })
 
@@ -95,5 +95,3 @@ heroCart.addEventListener('click', function (e) {
         }
     }
 })
-
-
