@@ -56,7 +56,7 @@ if(localStorage.key(0) === "StarWars") {
 
 
 //INPUT SOUND
-inputText.addEventListener('focus', async function() {
+inputText.addEventListener('focus', function() {
      swordUp.play();
      swoedSound.play()
 })
