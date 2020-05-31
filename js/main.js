@@ -5,7 +5,7 @@
 var arr = [];
 
 
-
+//FETCH
 function sendRequest(method, url) {
     return fetch(url)
         .then(response => {
@@ -53,6 +53,9 @@ if(localStorage.key(0) === "StarWars") {
     .catch(err => console.log(err))
 }
 
+
+
+//INPUT SOUND
 inputText.addEventListener('focus', async function() {
      swordUp.play();
      swoedSound.play()
@@ -77,9 +80,8 @@ inputText.addEventListener('keydown', function () {
     }
 })
 
-
+//MODAL INFO
 heroCart.addEventListener('click', function (e) {
-
     for (let i = 0; i < arr.length; i++) {
         if (e.target.innerHTML == arr[i].name) {
             exampleModalLable.innerHTML = arr[i].name;
