@@ -10,9 +10,12 @@ const birth = document.querySelector('#birth');
 const gender = document.querySelector('#gender');
 const wrapper = document.querySelector('#wrapper');
 const inputText = document.querySelector('#inputText');
-const onloadAudio = document.querySelector("#audio");
 const swordUp = document.querySelector("#audio1");
 const swoedDown = document.querySelector("#audio2");
-const body = document.querySelector('#body');
+const swoedSound = document.querySelector("#audio3");
+const swoedSound2 = document.querySelector("#audio4");
+
+
+
 
 

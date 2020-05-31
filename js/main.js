@@ -6,8 +6,6 @@ var arr = [];
 
 
 
-
-
 function sendRequest(method, url) {
     return fetch(url)
         .then(response => {
@@ -15,8 +13,6 @@ function sendRequest(method, url) {
         })
 
 }
-
-
 
 
 //INIT FUNCTION
@@ -57,19 +53,20 @@ if(localStorage.key(0) === "StarWars") {
     .catch(err => console.log(err))
 }
 
-inputText.addEventListener('focus', function() {
-    swordUp.play();
+inputText.addEventListener('focus', async function() {
+     swordUp.play();
+     swoedSound.play()
 })
 inputText.addEventListener('blur', function() {
     swoedDown.play();
+    swoedSound.pause();
 })
-
-
 
 
 
 //INPUT SERCH
 inputText.addEventListener('keydown', function () {
+    swoedSound2.play();
     if(localStorage.key(0) === "StarWars") {
         let localStorageData = JSON.parse(localStorage.getItem('StarWars'));
         generateData(localStorageData);
@@ -79,23 +76,6 @@ inputText.addEventListener('keydown', function () {
         .catch(err => console.log(err))
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 heroCart.addEventListener('click', function (e) {
@@ -115,27 +95,3 @@ heroCart.addEventListener('click', function (e) {
 })
 
 
-
-
-
-
-
-
-
-// //PARENT NODE ARR
-// let arrayData = []; 
-// function perentElem() {
-// let num = 0; 
-// $('#hero_cart').each(function(){ 
-//     let oneDiv = $(this);
-//     let countSpan = oneDiv.find('p#cardId').length - 1; 
-//     let spansData = []; 
-//     for(i = 0; i <= countSpan; i++){ 
-//         let dataSpan = oneDiv.find('p#cardId').eq(i).html(); 
-//         spansData[i] = dataSpan; 
-//     }
-//     arrayData[num] = spansData; 
-//     num ++; 
-// });
-// console.log(arrayData)
-// }
