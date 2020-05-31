@@ -12,8 +12,7 @@
 </head>
 
 <body>
-    <!-- <audio src="audio/John Williams - Ahch-To Island.mp3" class="audio" autoplay="autoplay">Ваш браузер не поддерживает</audio> -->
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <header class="header">
             <div class="header__logo">
                 <img src="img/starwars.png" class="starwarsImg" alt="">
@@ -23,7 +22,7 @@
         <div class="conteiner">
             <div class="search">
                 <img src="img/lightSword.png" class="sword" alt="">
-                <input type="text" placeholder="Enter name..." id="inputText">
+                <input type="text" placeholder="Enter name..." id="inputText" autocomplete="off">
             </div>
             <div class="hearo_cart" id="hero_cart">
             </div>
@@ -67,6 +66,8 @@
             </div>
 
         </div>
+ <audio src="audio/John Williams - Ahch-To Island.mp3" loop  type = 'audio/mpeg'class="audio" autoplay="autoplay" preload="auto">Ваш браузер не поддерживает аудио</audio>
+ 
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -78,6 +79,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+        <script src="js/variables.js"></script>
     <script src="js/main.js"></script>
 </body>
 

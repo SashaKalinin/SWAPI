@@ -1,17 +1,6 @@
-const requestURL = "https://swapi.dev/api/people/?page=1";
-const heroCart = document.querySelector('#hero_cart');
-const cardId = document.querySelector('#cardId');
-const exampleModalLable = document.querySelector('#exampleModalLable');
-const height = document.querySelector('#height');
-const mass = document.querySelector('#mass');
-const hair = document.querySelector('#hair');
-const skin = document.querySelector('#skin');
-const birth = document.querySelector('#birth');
-const gender = document.querySelector('#gender');
-const homeworld = document.querySelector('#homeworld');
-const films = document.querySelector('#films');
-const starships = document.querySelector('#starships');
-const inputText = document.querySelector('#inputText');
+
+
+// import {requestURL,heroCart,cardId,exampleModalLable,height,mass,hair,skin,birth,gender,wrapper,inputText} from './variables.js';
 
 var arr = [];
 
