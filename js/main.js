@@ -91,7 +91,7 @@ heroCart.addEventListener('click', function (e) {
             skin.innerHTML = arr[i].skin_color;
             birth.innerHTML = arr[i].birth_year;
             gender.innerHTML = arr[i].gender;
-            inputText.value = '';
+            // inputText.value = '';
         }
     }
 })
