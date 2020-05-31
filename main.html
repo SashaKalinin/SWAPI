@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <audio src="audio/John Williams - Ahch-To Island.mp3" class="audio" autoplay="autoplay">Ваш браузер не поддерживает</audio>
+    <!-- <audio src="audio/John Williams - Ahch-To Island.mp3" class="audio" autoplay="autoplay">Ваш браузер не поддерживает</audio> -->
     <div class="wrapper">
         <header class="header">
             <div class="header__logo">
@@ -23,34 +23,9 @@
         <div class="conteiner">
             <div class="search">
                 <img src="img/lightSword.png" class="sword" alt="">
-                <input type="text" placeholder="Enter name...">
+                <input type="text" placeholder="Enter name..." id="inputText">
             </div>
-            <div class="hearo_cart">
-                <div class="cart" data-toggle="modal" data-target="#exampleModal">
-                    <img src="img/luk.png" alt="">
-                    <p class="p_text">Luke Skywalker</p>
-                </div>
-                <div class="cart" data-toggle="modal" data-target="#exampleModal">
-                    <img src="img/luk.png" alt="">
-                    <p class="p_text">Luke Skywalker</p>
-                </div>
-                <div class="cart" data-toggle="modal" data-target="#exampleModal">
-                    <img src="img/luk.png" alt="">
-                    <p class="p_text">Luke Skywalker</p>
-                </div>
-                <div class="cart" data-toggle="modal" data-target="#exampleModal">
-                    <img src="img/luk.png" alt="">
-                    <p class="p_text">Luke Skywalker</p>
-                </div>
-                <div class="cart" data-toggle="modal" data-target="#exampleModal">
-                    <img src="img/luk.png" alt="">
-                    <p class="p_text">Luke Skywalker</p>
-                </div>
-                <div class="cart" data-toggle="modal" data-target="#exampleModal">
-                    <img src="img/luk.png" alt="">
-                    <p class="p_text">Luke Skywalker</p>
-                </div>
-
+            <div class="hearo_cart" id="hero_cart">
             </div>
         </div>
         <footer class="footer">
@@ -58,7 +33,7 @@
                 Info by SWAPI.dev
             </div>
         </footer>
-        
+
 
         <!-- MODAL -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal"
@@ -74,15 +49,18 @@
 
                     <div class="modal-body" id="modal-body">
                         <ul class="liClass" id="about">
-                            <li>Height:<p id="height">111</p></li>
-                            <li>Mass:<p id="mass">111</p></li>
-                            <li>Hair color:<p id="hair">111</p></li>
-                            <li>Skin color:<p id="skin">111</p></li>
-                            <li>Birth year:<p id="birth">111</p></li>
-                            <li>Gender:<p id="gender">111</p></li>
-                            <li>Homeworld:<p id="homeworld">111</p></li>
-                            <li>Films:<p id="films">111</p></li>
-                            <li>Starships:<p id="starships">111</p></li>
+                            <li>Height:<p id="height"></p>
+                            </li>
+                            <li>Mass:<p id="mass"></p>
+                            </li>
+                            <li>Hair color:<p id="hair"></p>
+                            </li>
+                            <li>Skin color:<p id="skin"></p>
+                            </li>
+                            <li>Birth year:<p id="birth"></p>
+                            </li>
+                            <li>Gender:<p id="gender"></p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -93,6 +71,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>

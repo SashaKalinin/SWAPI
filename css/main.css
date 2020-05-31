@@ -63,7 +63,7 @@ input {
 }
 .search input {
   width: 60px;
-  height: 15px;
+  height: 18px;
   border: 1px solid transparent;
   border-radius: 10px;
   background-color: #fff;
@@ -90,7 +90,7 @@ input {
   justify-content: center;
 }
 .cart {
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   border-radius: 40px;
   width: 30%;
   min-width: 195px;
