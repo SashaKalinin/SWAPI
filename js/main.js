@@ -4,6 +4,10 @@
 
 var arr = [];
 
+
+
+
+
 function sendRequest(method, url) {
     return fetch(url)
         .then(response => {
@@ -11,6 +15,8 @@ function sendRequest(method, url) {
         })
 
 }
+
+
 
 
 //INIT FUNCTION
@@ -50,6 +56,13 @@ if(localStorage.key(0) === "StarWars") {
     .then(data => generateData(data.results))
     .catch(err => console.log(err))
 }
+
+inputText.addEventListener('focus', function() {
+    swordUp.play();
+})
+inputText.addEventListener('blur', function() {
+    swoedDown.play();
+})
 
 
 
