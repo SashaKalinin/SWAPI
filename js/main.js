@@ -80,7 +80,7 @@ inputText.addEventListener('input', function () {
 //MODAL INFO
 heroCart.addEventListener('click', function (e) {
     for (let i = 0; i < arr.length; i++) {
-        if (e.target.innerHTML == arr[i].name) {
+        if (e.target.innerHTML === arr[i].name) {
             exampleModalLable.innerHTML = arr[i].name;
             height.innerHTML = arr[i].height;
             mass.innerHTML = arr[i].mass;
@@ -92,3 +92,7 @@ heroCart.addEventListener('click', function (e) {
         }
     }
 })
+
+window.unload = () => {
+    localStorage.removeItem('StarWars');
+}
